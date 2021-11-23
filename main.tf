@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-1"
 }
 
-module "s3-bucket" {
+module "s3_bucket" {
 	source  = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 	version = "2.11.1"
 
