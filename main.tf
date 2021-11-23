@@ -6,7 +6,7 @@ module "s3-bucket" {
 	source  = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 	version = "2.11.1"
 
-    bucket = "scalr-demo"
+    bucket = "scalr-demo-poc"
 }
 
 
