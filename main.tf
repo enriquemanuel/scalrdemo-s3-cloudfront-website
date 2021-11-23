@@ -1,12 +1,17 @@
-provider "aws" {
-    region = "us-east-1"
+variable "region" {
+    type    = string
+    default = "us-east-1"
 }
 
-module "s3-bucket" {
+provider "aws" {
+  region   = var.region
+}
+
+module "s3_bucket" {
 	source  = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 	version = "2.11.1"
 
-    bucket = "scalr-demo"
+  bucket = "scalr-demo"
 }
 
 
